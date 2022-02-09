@@ -1,0 +1,87 @@
+main {
+    background-image: url("images/bg.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin: -8px;
+    padding: 0.5rem;
+}
+
+nav{
+    margin: -8px;
+    background: rgba(0, 0, 0, 0.432);
+    display: flex;
+    align-self: center;
+    padding-left: 7rem;
+}
+
+nav img{
+    align-content: center;
+    align-self: center;
+}
+
+ul{
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+
+li{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+button{
+    align-self: center;
+    color: rgb(255, 255, 255);
+    background: black;
+    font-size: medium;
+    border: 0cm;
+    /* align-content: flex-end; */
+    align-items: flex-end;
+    width: 10rem;
+    height: 2.5rem;
+}
+
+.btn-dwn{
+    color: white;
+    border: solid black;
+    padding: 6px;
+}
+.dwn-img{
+    /* padding-top: 5px; */
+    align-self: center;
+    height: 22px;
+}
+section div a{
+    align-items: center;
+}
+
+nav a{
+    align-content: center;
+    align-self: center;
+}
+
+nav a img{
+    height: 40px;
+    margin-left: 4px;
+}
+
+section{
+    margin: 4rem 6rem;
+    padding: 4rem 5rem;
+    display: flex;
+}
+
+.hero-section{
+    background: rgba(0, 0, 0, 0.178);
+    color: white;
+}
+
+.services-section h2{
+    margin: 0cm;
