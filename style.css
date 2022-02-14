@@ -222,6 +222,7 @@ section{
 .social-img:hover{
     background: rgb(255, 255, 255);
     border-radius: 25px;
+    /* border: solid 2; */
     /* border: 1px; */
 }
 
@@ -244,5 +245,57 @@ footer span{
 
 footer div{
     display: inline-block;
-    padding-left: 200px;
+    padding-left: 170px;
+}
+
+input{
+    /* padding: 20px; */
+    width: 300px;
+    height: 25px;
+    border: 0;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+textarea{
+    width: 300px;
+    /* height: 25px; */
+    border: 0;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+label{
+    font-weight: 700;
+}
+
+form button{
+    color: black;
+    font-weight: 700;
+    background: white;
+    border: solid black;
+    width: 315px;
+}
+
+form button:hover{
+    color: white;
+    font-weight: 700;
+    background: black;
+    border: solid black;
+    width: 315px;
+}
+
+
+.useful a{
+   /* color: brown; */
+   padding: 3px;
+   display: block;
 }
