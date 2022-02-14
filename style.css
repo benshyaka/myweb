@@ -11,6 +11,7 @@ nav{
     margin: -8px;
     background: rgba(0, 0, 0, 0.432);
     display: flex;
+    position: relative;
     align-self: center;
     padding-left: 7rem;
 }
@@ -18,6 +19,11 @@ nav{
 nav img{
     align-content: center;
     align-self: center;
+/*	float: right*/
+}
+
+nav a img{
+	float: right
 }
 
 ul{
@@ -37,12 +43,15 @@ li a{
 }
 
 li a:hover{
-    color: rgb(0, 0, 0);
-    stroke: antiquewhite;
-    stroke-width: 5px;
-    stroke-opacity: initial;
-    text-decoration: none;
+    color: black;
+/*	margin: 0;*/
+	font-size: 19px;
+    -webkit-text-stroke: 2px white;
+/*	text-stroke: 2px white;*/
+	
 }
+
+
 
 .hero_p{
     text-align: left;
@@ -86,7 +95,8 @@ nav a{
 
 nav a img{
     height: 40px;
-    margin-left: 4px;
+/*    margin-left: 4px;*/
+	float: right
 }
 
 section{
@@ -200,4 +210,39 @@ section{
 }
 .blog-text{
     padding: 15px;
+}
+
+.social-img{
+    /* padding-top: 5px; */
+    align-self: center;
+    padding: 5px;
+    height: 40px;
+}
+
+.social-img:hover{
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    /* border: 1px; */
+}
+
+.social-p{
+    font-weight: 800;
+}
+
+footer{
+    background-color: black;
+    margin: -8px;
+    padding: 50px 115px;
+    color: white;
+}
+
+footer span{
+    padding-top: 10px;
+    display: block;
+    font-weight: 700;
+}
+
+footer div{
+    display: inline-block;
+    padding-left: 200px;
 }
