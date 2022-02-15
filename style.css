@@ -7,6 +7,11 @@ main {
     padding: 0.5rem;
 }
 
+*{
+    box-sizing: border-box;
+}
+
+
 nav{
     margin: -8px;
     background: rgba(0, 0, 0, 0.432);
@@ -45,8 +50,8 @@ li a{
 li a:hover{
     color: black;
 /*	margin: 0;*/
-	font-size: 19px;
-    -webkit-text-stroke: 2px white;
+	/* font-size: 19px; */
+    -webkit-text-stroke: 1px white;
 /*	text-stroke: 2px white;*/
 	
 }
