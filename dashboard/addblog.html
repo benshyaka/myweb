@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHYAKA dashboard</title>
+    <link rel="stylesheet" href="../styles/dashboard_style.css">
+</head>
+
+<body>
+
+
+    <div class="grid-container">
+        <div class="item1">
+            <main>
+                <menu class="navbar">
+                    <nav>
+                        <a href="../index.html"><img src="../images/SHYAKA.png" class="img" alt="SHYAKA Logo"></a>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html"><strong>Blogs</strong> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/blog.html">Messages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/about.html">Settings</a>
+                            </li>
+                        </ul>
+
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Settings</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a onclick="logout()">Logout</a>
+                                <a href="#about">My profile</a>
+                            </div>
+                        </div>
+                    </nav>
+                </menu>
+
+            </main>
+        </div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+    </div>
+
+    <section>
+        <div class="container">
+
+
+            <p>
+                <strong>Add new blogs</strong>
+            </p>
+
+            <div id="blogalert" class="blogalert">
+                <p><span>Please fill out alll the fields</span></p>
+            </div>
+            <form class="addblog">
+                <label for="exampleFormControlInput1" class="form-label">Title</label>
+                <div class="mb-3">
+                    <input type="text" id="title" name="title" placeholder="John Doe">
+                </div>
+                <label for="blogcontent" class="form-label">Picture</label>
+                <div>
+                    <input type="text" name="image" id="image" placeholder="https://www.site.com/digital.jpg">
+                </div>
+                <label for="exampleFormControlTextarea1">Blog content</label>
+                <div class="mb-3">
+                    <textarea name="body" id="body" rows="5"></textarea>
+                </div>
+                <button type="reset">Clear</button>
+                <button id="addPost">Submit</button>
+            </form>
+
+
+        </div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="../js/firebase-config.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/newPost.js"></script>
+
+</body>
+
+</html>
