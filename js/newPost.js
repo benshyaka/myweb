@@ -4,9 +4,12 @@ const body = document.getElementById('body');
 const image = document.getElementById('image');
 const blogalert = document.getElementById('blogalert');
 blogalert.style.visibility = "none"
+blogalert.innerText = ""
+
 
 addPost.addEventListener('click', (e) => {
-    if (body.value == "" || title.value == "") {
+    if (title == "" || body == "" || image == "") {
+        e.preventDefault();
         blogalert.style.visibility = "block"
     } else {
         e.preventDefault();
